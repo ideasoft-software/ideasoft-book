@@ -33,7 +33,8 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="duration">Duración en minutos</label>
-                                        <input type="number" class="form-control" min="15" value="{{ $service->duration }}" step="5" id="duration" name="duration" placeholder="Duración">
+                                        <input type="hidden" id="duration_date_min" value="{{ Session::get('business_duration') }}">
+                                        <input type="number" class="form-control" min="{{ Session::get('business_duration') }}" value="{{ $service->duration }}" step="5" id="duration" name="duration" placeholder="Duración">
                                     </div>
                                 </div>
                                 <div class="form-row">

@@ -11,10 +11,15 @@ class RestPeriodController extends Controller
         $exist= RestPeriod::where('start', date('H:i:s a', strtotime($request->start)))
             ->where('end', date('H:i:s a', strtotime($request->end)))
             ->where('schedule_id', $request->schedule_id)->count();
+
+        $count_day= RestPeriod::where('schedule_id',  $request->schedule_id)
+            ->count();
         if ($exist){
             return "duplicate";
         }
-
+        if ($count_day == 2){
+            return "day_limit";
+        }
         $rest_period= new RestPeriod;
         $rest_period->start= $request->start;
         $rest_period->end= $request->end;

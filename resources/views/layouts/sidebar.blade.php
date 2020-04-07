@@ -53,8 +53,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Dashboard.Content.html">
-                        <i class="consmind-Bulleted-List"></i> Listado Citas
+                    <a href="{{ route('agenda.index') }}">
+                        <i class="iconsmind-Bulleted-List"></i> Listado Citas
                     </a>
                 </li>
             </ul>

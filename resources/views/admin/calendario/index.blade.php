@@ -38,13 +38,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-
-                            <div class="calendar"></div>
-
-                        </div>
-                    </div>
+                    <div id="calendarDates"></div>
                 </div>
 
             </div>
@@ -52,8 +46,8 @@
     </div>
 @endsection
 @push('scripts')
-    <script>
-        $(document).ready(function () {
-        });
-    </script>
+<script>
+    $(document).ready(function () {
+    });
+</script>
 @endpush

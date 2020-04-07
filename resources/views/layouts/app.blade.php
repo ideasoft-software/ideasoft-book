@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ config('app.name') }} | @yield('title', 'Inicio')</title>
+    <title>{{ session()->get('business_name') }} | @yield('title', 'Inicio')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" href="{{ \Storage::url(session()->get('business_logo')) }}">
     <link rel="stylesheet" href="{{ asset('font/iconsmind/style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('font/simple-line-icons/css/simple-line-icons.css') }}"/>
 
@@ -36,7 +37,6 @@
     <script src="{{ asset('js/vendor/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/vendor/Chart.bundle.min.js') }}"></script>
     <script src="{{ asset('js/vendor/chartjs-plugin-datalabels.js') }}"></script>
-    <script src="{{ asset('js/vendor/moment.min.js') }}"></script>
     <script src="{{ asset('js/vendor/fullcalendar.min.js') }}"></script>
     <script src="{{ asset('js/vendor/datatables.min.js') }}"></script>
     <script src="{{ asset('js/vendor/perfect-scrollbar.min.js') }}"></script>

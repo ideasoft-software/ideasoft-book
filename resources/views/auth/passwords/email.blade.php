@@ -20,9 +20,9 @@
             <span>Correo Electrónico</span>
         </label>
         @error('email')
-            <span class="alert alert-danger" role="alert">
+            <div class="alert alert-danger" role="alert">
                 <strong>{{ $message }}</strong>
-            </span>
+            </div>
         @enderror
 
         <div class="d-flex justify-content-between align-items-center">

@@ -4,6 +4,7 @@
 @endpush
 
 @section('content')
+
     <div class="container-fluid">
         <div class="row  ">
             <div class="col-12">
@@ -24,6 +25,10 @@
                     </div>
 
                     <div class="row mb-4">
+
+                        @can('manage_services')
+                            administrar
+                        @endcan
 
                         @foreach($services as $service)
                             <div class="col-xs-6 col-lg-3 col-12 mb-4">

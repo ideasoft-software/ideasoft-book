@@ -5,14 +5,15 @@ $(".btn_create_service").click(function () {
     let status= $("#status");
     let description= $("#description");
     let category= $("#category_id");
+    let duration_min= $("#duration_date_min").val();
 
     if (name.val() === '') {
         notify("top", "center", "danger", "Error", "Completa el campo: Nombre del servicio");
         name.focus();
         return false;
     }
-    if (duration.val() <= 0 || duration.val() === '') {
-        notify("top", "center", "danger", "Error", "Completa el campo: Duración");
+    if (duration.val() <= 0 || duration.val() === '' || duration.val() < duration_min) {
+        notify("top", "center", "danger", "Error", "Verifica el campo: Duración. La duración minima de una cita es de "+duration_min+" minutos.");
         duration.focus();
         return false;
     }
@@ -62,14 +63,15 @@ $(".btn_edit_service").click(function () {
     let status= $("#status");
     let description= $("#description");
     let category= $("#category_id");
+    let duration_min= $("#duration_date_min").val();
 
     if (name.val() === '') {
         notify("top", "center", "danger", "Error", "Completa el campo: Nombre del servicio");
         name.focus();
         return false;
     }
-    if (duration.val() <= 0 || duration.val() === '') {
-        notify("top", "center", "danger", "Error", "Completa el campo: Duración");
+    if (duration.val() <= 0 || duration.val() === '' || duration.val() < duration_min) {
+        notify("top", "center", "danger", "Error", "Verifica el campo: Duración. La duración minima de una cita es de "+duration_min+" minutos.");
         duration.focus();
         return false;
     }

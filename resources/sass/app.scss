@@ -1,5 +1,9 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, p{
+    font-family: 'Poppins', sans-serif!important;
+}
 
 // Variables
 @import 'variables';
@@ -7,6 +11,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import "~bootstrap-timepicker/css/bootstrap-timepicker.css";
+
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import '~@fullcalendar/list/main.css';
+@import '~@fullcalendar/timegrid/main.css';
 
 .modal{
 
@@ -17,4 +26,21 @@
 }
 .icon-md{
     font-size: 20px;
+}
+.icon-sm{
+    font-size: 10px;
+}
+
+.fc-event {
+    border: 1px solid #3a87ad; /* default BORDER color */
+    background-color: #3a87ad!important; /* default BACKGROUND color */
+    color: #fff;               /* default TEXT color */
+    font-size: 1em!important;            /* EDIT HERE */
+    cursor: default;
+    overflow: auto!important;
+}
+.fc-day-grid-event .fc-content{
+    white-space: initial!important;
+    overflow: auto!important;
+    text-overflow: unset!important;
 }

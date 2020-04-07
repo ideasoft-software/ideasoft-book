@@ -18,9 +18,11 @@ class CreateDatesTable extends Migration
             $table->unsignedBigInteger('schedule_id');
             $table->unsignedBigInteger('service_id');
             $table->unsignedBigInteger('client_id');
-            $table->integer('discount');
+            $table->integer('discount')->nullable();
             $table->date('date');
-            $table->time('time');
+            $table->time('start');
+            $table->time('end');
+            $table->tinyInteger('status');
             $table->timestamps();
 
             $table->foreign('schedule_id')->references('id')->on('schedules');

@@ -6,26 +6,28 @@
     </a>
     <h2 class="mb-4 font-weight-bolder text-primary">INGRESAR</h2>
 
-    <form  method="POST" action="{{ route('login') }}">
+    <form method="POST" action="{{ route('login') }}">
         @csrf
         <label class="form-group has-float-label mb-4">
-            <input  id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
+            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
+                   value="{{ old('email') }}" required autocomplete="email" autofocus/>
             <span>Correo Electrónico</span>
         </label>
-        @error('email')
-            <span class="alert alert-danger" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-        @enderror
 
         <label class="form-group has-float-label mb-4">
-            <input  id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" />
+            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
+                   name="password" required autocomplete="current-password"/>
             <span>Contraseña</span>
         </label>
+        @error('email')
+        <div class="alert alert-danger" role="alert">
+            <strong>{{ $message }}</strong>
+        </div>
+        @enderror
         @error('password')
-            <span class="alert alert-danger" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
+        <div class="alert alert-danger" role="alert">
+            <strong>{{ $message }}</strong>
+        </div>
         @enderror
 
         <div class="d-flex justify-content-between align-items-center">

@@ -46,3 +46,44 @@ function notify(placementFrom, placementAlign, type, title, message){
         }
     );
 }
+
+function formatAMPM(time) {
+    let hour = time.split(':');
+    var hours = hour[0];
+    var minutes = hour[1];
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+}
+function formatTime(time) {
+    let hour = time.split(':');
+    let h = hour[0];
+    let m = hour[1];
+    let a = '';
+
+    if (h >= 0 && h < 12) {
+        a = 'AM';
+    } else {
+        a = 'PM';
+    }
+
+    if (h < 24 && m < 60) {
+        return h + ':' + m + ' ' + a;
+    } else {
+        return '00:00';
+    }
+};
+function formatNumber(num) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+};
+function formatMonthString(month) {
+    const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    return months[month - 1];
+}
+function formatDayString(day) {
+    const days = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado"];
+    return days[day];
+}

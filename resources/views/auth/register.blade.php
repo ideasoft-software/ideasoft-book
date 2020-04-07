@@ -14,9 +14,9 @@
             <span>Nombre Completo</span>
         </label>
         @error('name')
-        <span class="alert alert-danger" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
+        <div class="alert alert-danger" role="alert">
+            <strong>{{ $message }}</strong>
+        </div>
         @enderror
 
 
@@ -25,9 +25,9 @@
             <span>Correo Electrónico</span>
         </label>
         @error('email')
-        <span class="alert alert-danger" role="alert">
+        <div class="alert alert-danger" role="alert">
                 <strong>{{ $message }}</strong>
-            </span>
+            </div>
         @enderror
 
         <label class="form-group has-float-label mb-4">
@@ -40,9 +40,9 @@
             <span>Contraseña</span>
         </label>
         @error('password')
-        <span class="alert alert-danger" role="alert">
+        <div class="alert alert-danger" role="alert">
                 <strong>{{ $message }}</strong>
-            </span>
+            </div>
         @enderror
 
 

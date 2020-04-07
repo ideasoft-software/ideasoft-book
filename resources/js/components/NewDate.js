@@ -19,11 +19,12 @@ class NewDate extends Component {
         this.handleQuitSelectedClient = this.handleQuitSelectedClient.bind(this);
         this.handleChangeFormNewClient = this.handleChangeFormNewClient.bind(this);
         this.submitFormClient = this.submitFormClient.bind(this);
+        this.submitNewDate = this.submitNewDate.bind(this);
 
         this.state = {
             services: [],
             clients: [],
-            serviceSelected: 0,
+            serviceSelected: null,
             serviceIndexSelected: null,
             step: 1,
             selectedDay: '',
@@ -31,6 +32,7 @@ class NewDate extends Component {
             selectedYear: '',
             selectedHour: null,
             selectedIndexHour: [],
+            selectedHoursId: [],
             selectedFullDate: '',
             selectedClient: null,
             schedule: null,
@@ -45,10 +47,12 @@ class NewDate extends Component {
                 notes: '',
                 exist: false,
                 exist_email: false
-            }
+            },
+            observations: null,
+            employee_id: 0,
+            duration_turn: 30
         };
     }
-
     componentDidMount() {
         this.getData();
         this.initDatepicker();
@@ -57,9 +61,13 @@ class NewDate extends Component {
         const URL = '/agenda/new_date/getData';
         const response = await axios.post(URL);
         const data = response.data;
+        if (!data){
+            this.getData();
+        }
         this.setState({
             services: data.services,
             clients: data.clients,
+            duration_turn: parseInt(data.duration_turn)
         });
     };
     initDatepicker() {
@@ -74,9 +82,11 @@ class NewDate extends Component {
         const Datepicker = $(".date-inline");
         Datepicker.datepicker({
             autoclose: true,
+            maxViewMode: 0,
             language: 'es',
             format: 'dd/mm/yyyy',
             startDate: (today.getDate()) + '-' + (today.getMonth() + 1) + '-' + today.getFullYear(),
+            endDate: '31-12-' + today.getFullYear() + 1,
             templates: {
                 leftArrow: '<i class="simple-icon-arrow-left"></i>',
                 rightArrow: '<i class="simple-icon-arrow-right"></i>'
@@ -128,8 +138,14 @@ class NewDate extends Component {
         const service_id = this.state.services[e.target.value].id;
         this.setState({
             serviceIndexSelected: e.target.value,
-            serviceSelected: service_id
+            serviceSelected: service_id,
+            selectedHour: null,
+            selectedIndexHour: [],
+            start_date: '',
+            end_date: '',
+            employee_id: 0
         });
+        $("#employee_date  option[value=0]").attr("selected",true);
     };
     handleSelectClient(e) {
         let client= null;
@@ -201,11 +217,36 @@ class NewDate extends Component {
         }
 
     };
+    async submitNewDate() {
+        const URL = '/agenda/new_date';
+        const response = await axios.post(URL, {
+            service: this.state.serviceSelected,
+            client: this.state.selectedClient.id,
+            employee: this.state.employee_id,
+            schedule: this.state.schedule.id,
+            date: this.state.selectedFullDate,
+            start: this.state.start_date,
+            end: this.state.end_date,
+            turns: this.state.selectedHoursId,
+            observations: this.state.observations
+        });
+        const data = response.data;
+
+        if (data.message === 'success') {
+            notify("top", "center", "success", "Correcto", "Cita registrada. Espera un momento...");
+            location.href= '/agenda/date/'+data.id;
+        }else if (data.message === 'error_turns'){
+            notify("top", "center", "danger", "Error", "Seleccione un horario valido.");
+        }else{
+            notify("top", "center", "danger", "Error", "Ha ocurrido un error registrando la cita. Intenta de nuevo.");
+        }
+
+    };
     validateForm(form) {
         if (form === 1) {
             //TODO pueden seleccionar varios servicios?...
-            if (this.state.serviceSelected === 0 || this.state.serviceSelected === null || this.state.serviceSelected === '0') {
-                notify("top", "center", "danger", "Error", "Por favor selecciona un servicio para continuar...");
+            if (parseInt(this.state.serviceSelected) === 0 || this.state.serviceSelected === null || this.state.employee_id === null || parseInt(this.state.employee_id) === 0) {
+                notify("top", "center", "danger", "Error", "Por favor selecciona un servicio y un empleado para continuar...");
                 $("#service_id").focus();
                 return false;
             }
@@ -223,9 +264,6 @@ class NewDate extends Component {
                 return false;
             }
         }
-        if (form === 4) {
-            notify("top", "center", "info", "Info", "un momento por favor...");
-        }
         this.setState({step: this.state.step + 1})
     }
     onChangeDate(newDate) {
@@ -238,20 +276,27 @@ class NewDate extends Component {
         this.getScheduleDateSelected(newDate);
     }
     async getScheduleDateSelected(date) {
-        const dateSelected = {
+        const dataSelected = {
             day: date.getDate(),
             dayNumber: date.getDay(),
             month: (date.getMonth() + 1),
             year: date.getFullYear(),
+            service_id: this.state.serviceSelected,
+            employee_id: this.state.employee_id
         };
 
         const URL = '/agenda/new_date/getScheduleDateSelected';
-        const response = await axios.post(URL, {'date': dateSelected, 'service_id': this.state.serviceSelected});
+        const response = await axios.post(URL, dataSelected);
         const data = response.data;
         this.setState({
             schedule: data.schedule,
             hours: data.hours,
-            rest_periods: data.rest_periods
+            rest_periods: data.rest_periods,
+            selectedHour: null,
+            selectedIndexHour: [],
+            selectedHoursId: [],
+            start_date: '',
+            end_date: ''
         });
     }
     hoursDiference(start, end){
@@ -285,11 +330,19 @@ class NewDate extends Component {
         return (horas + ':' + (minutos < 10 ? '0' : '') + minutos);
     }
     handleSelectHour(index){
+        this.setState({
+            selectedHour: null,
+            selectedIndexHour: [],
+            selectedHoursId: [],
+            start_date: '',
+            end_date: ''
+        });
+
         const hour= this.state.hours[index];
 
         const service= this.state.services[this.state.serviceIndexSelected];
         const duration_service= service.duration;
-        const duration_turn_default= 30;
+        const duration_turn_default= this.state.duration_turn;
 
         const hourArray= hour.hour.split(':');
         const hour_start= new Date(2020, 0, 1, hourArray[0], hourArray[1], 0);
@@ -312,22 +365,93 @@ class NewDate extends Component {
         }
 
         //console.log("start: "+hourStart+' end: '+hourEnd);
-        const duration_turn= this.hoursDiference(hourStart, hourEnd);
-        //console.log("turn: "+duration_turn+" duration: "+duration_service);
-
+        //const duration_turn= this.hoursDiference(hourStart, hourEnd);
         if (duration_service > duration_turn_default){
-            console.log("pass");
-            this.setState({
-                selectedHour: hour,
-                selectedIndexHour: [index, index + 1],
-                start_date: hourStart,
-                end_date: hourEnd
-            });
+            var turns= Math.round(duration_service / duration_turn_default);
+            //console.log("turns: "+turns);
+            var turns_sel= [];
+            var turns_id= [];
+            for (var i=0; i < turns; i++){
+                var index_hour= index + i;
+                var hour_turn= this.state.hours[index_hour];
+
+                if (turns_sel.length !== 0){
+                    var index_ant= turns_sel[parseInt(turns_sel.length) - 1];
+                    var hour_ant= this.state.hours[index_ant].hour;
+                    hour_ant= hour_ant.split(":");
+                    hour_ant= hour_ant[0]+':'+hour_ant[1];
+
+                    var hour_sig= hour_turn.hour;
+                    hour_sig= hour_sig.split(":");
+                    hour_sig= hour_sig[0]+':'+hour_sig[1];
+
+                    const diference= this.hoursDiference(hour_ant, hour_sig);
+
+                    if (diference > duration_turn_default){
+                        turns_sel= [];
+                        hour_turn= [];
+                        notify("top", "center", "danger", "Error", "No es posible asignar la totalidad de la duración del servicio a la cita. Elije un horario diferente.");
+                        break;
+                    }
+                }
+
+                //console.log(this.state.hours[index + i - 1].hour);
+                //console.log(this.hoursDiference(this.state.hours[index + i - 1].hour, hour_turn.hour));
+                //var hour_turn= this.state.hours[hour_row.id];
+                if (hour_turn){
+                    if (!hour_turn.id){
+                        turns_sel= [];
+                        hour_turn= [];
+                        notify("top", "center", "danger", "Error", "No es posible asignar la totalidad de la duración del servicio a la cita. Elije un horario diferente.");
+                        break;
+                    }
+                    turns_sel.push(index_hour);
+                    turns_id.push(hour_turn.id);
+                }else{
+                    turns_sel= [];
+                    hour_turn= [];
+                    notify("top", "center", "danger", "Error", "No es posible asignar la totalidad de la duración del servicio a la cita. Elije un horario diferente.");
+                    break;
+                }
+            }
+            //console.log(turns_id);
+            if (turns_sel.length === turns) {
+                this.setState({
+                    selectedHour: hour,
+                    selectedIndexHour: turns_sel,
+                    selectedHoursId: turns_id,
+                    start_date: hourStart,
+                    end_date: hourEnd
+                });
+            }else{
+                this.setState({
+                    selectedHour: null,
+                    selectedIndexHour: [],
+                    selectedHoursId: [],
+                    start_date: '',
+                    end_date: ''
+                });
+                $("button .btnCheckHour").removeClass('active');
+            }
         }else{
+            //this.state.hours[index]
+            var turn_id= [this.state.hours[index].id];
+            if (!turn_id){
+                this.setState({
+                    selectedHour: null,
+                    selectedIndexHour: [],
+                    selectedHoursId: [],
+                    start_date: '',
+                    end_date: ''
+                });
+                notify("top", "center", "danger", "Error", "No es posible asignar la hora seleccionada. Elije un horario diferente.");
+                $("button .btnCheckHour").removeClass('active');
+            }
             this.setState({
                 selectedHour: hour,
                 selectedIndexHour: [index],
                 start_date: hourStart,
+                selectedHoursId:turn_id,
                 end_date: hourEnd
             });
         }
@@ -442,9 +566,21 @@ class NewDate extends Component {
                                                     <p className="text-muted text-small mb-2">Categoría</p>
                                                     <p className="">
                                                         <a href="#">
-                                                            <span className="badge badge-pill badge-outline-theme-2">{ this.state.services[this.state.serviceIndexSelected].category_name }</span>
+                                                            <span className="badge badge-pill badge-outline-theme-2">{ this.state.services[this.state.serviceIndexSelected].category.name }</span>
                                                         </a>
                                                     </p>
+
+                                                    <div className="form-group text-center col-lg-4 mx-auto mt-5">
+                                                        <label htmlFor="employee_date" data-toggle="tooltip" title="Es posible modificar posteriormente." className="text-primary font-weight-bolder">SELECCIONE EMPLEADO</label>
+
+                                                        <select name="employee_date" defaultValue={ "0" } value={ this.state.employee_id } id="employee_date" onChange={ (e) => this.setState({ employee_id: e.target.value }) } className="form-control">
+                                                            <option value="0" selected>Seleccione...</option>
+                                                            { this.state.services[this.state.serviceIndexSelected].employees.map((employee, index) => {
+                                                                return <option value={ employee.employee_id } key={ index }>{ employee.name }</option>
+                                                            }) }
+                                                        </select>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         }
@@ -470,46 +606,56 @@ class NewDate extends Component {
 
                                         <div className="col-xl-5 col-xs-12 mb-4">
                                             <div className="card h-100">
-                                                <div className="card-body text-center">
+                                                <div className="card-body text-center px-0">
                                                     <h3 className="mb-4 text-primary"><i className="simple-icon-clock" /> SELECCIONA HORA DE LA CITA</h3>
 
                                                     {/* dias sin atención */}
-                                                    { this.state.schedule && !this.state.schedule.status &&
+                                                    { this.state.schedule && parseInt(this.state.schedule.status) !== 1 &&
                                                         <div className="alert alert-warning">
                                                             <strong>Este día NO hay atención.</strong>
                                                         </div>
                                                     }
 
                                                     {/* dias con atención */}
+                                                    { !this.state.schedule &&
+                                                        <div>
+                                                            <p className="text-muted"><i className="simple-icon-info"/> Selecciona primero la fecha de la cita...</p>
+                                                        </div>
+                                                    }
+
                                                     { this.state.schedule != null && this.state.schedule.status === 1  &&
                                                         <div>
-                                                            <p><strong className="text-primary">Horario de atención hoy:</strong> { this.formatAMPM(this.state.schedule.start) } a { this.formatAMPM(this.state.schedule.end) }</p>
+                                                            <p><strong className="text-primary">Horario de atención el día seleccionado: </strong>
+                                                                { this.formatAMPM(this.state.schedule.start_am) } a
+                                                                { this.formatAMPM(this.state.schedule.end_pm) === this.formatAMPM(this.state.schedule.start_pm) ? this.formatAMPM(this.state.schedule.end_am) : this.formatAMPM(this.state.schedule.end_pm) }
+                                                                </p>
                                                             <div className="btn-group-toggle justify-content-around" data-toggle="buttons">
                                                                 { this.state.hours.map((hour, index) => {
-                                                                    return <button onClick={ () => this.handleSelectHour(index) } key={ index } className={ this.state.selectedIndexHour.includes(index) ? "btn btn-outline-primary btn-sm m-1 active": "btn btn-outline-primary btn-sm m-1" }>
-                                                                        <input type="checkbox" name="hours" value={ index }/> { this.formatAMPM(hour.hour) }
+                                                                    return <button onClick={ () => this.handleSelectHour(index) } key={ index } className={ this.state.selectedIndexHour.includes(index) ? "btnCheckHour btn btn-outline-primary btn-sm m-1 active": "btnCheckHour btn btn-outline-primary btn-sm m-1" }>
+                                                                        <input type="checkbox" name="hours" className="check_hour" value={ index }/> { this.formatAMPM(hour.hour) }
                                                                     </button>
                                                                 })}
                                                             </div>
                                                         </div>
                                                     }
+
+                                                    {/* horario seleccionado */}
+                                                    { this.state.selectedHour != null &&
+                                                    <div className="col-xl-12 col-xs-12 mb-0 mt-3 bg-primary mx-0">
+                                                        <div className="card justify-content-center">
+                                                            <div className="card-body text-center text-white">
+                                                                <h3 className="mb-4 text-primary font-weight-bolder"><i className="simple-icon-check" /> HORARIO SELECCIONADO</h3>
+                                                                <p className="mb-1 text-primary"><strong>Fecha: </strong>{ this.state.schedule.day }, { this.state.selectedDay } de { this.formatMonthString(this.state.selectedMonth) }</p>
+                                                                <p className="mb-1 text-primary"><strong>Hora: </strong> Desde las <strong>{ this.formatAMPM(this.state.start_date) }</strong> Hasta las <strong>{ this.formatAMPM(this.state.end_date) }</strong></p>
+                                                                <p className="mb-1 text-primary"><strong>Duración: </strong> { this.state.services[this.state.serviceIndexSelected].duration } min.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    }
+
                                                 </div>
                                             </div>
                                         </div>
-
-                                        {/* horario seleccionado */}
-                                        { this.state.selectedHour != null &&
-                                            <div className="col-xl-8 col-xs-12 mb-4 mx-auto">
-                                                <div className="card justify-content-center">
-                                                    <div className="card-body text-center">
-                                                        <h3 className="mb-4 text-primary"><i className="simple-icon-check" /> HORARIO SELECCIONADO</h3>
-                                                        <p className="mb-1"><strong>Fecha: </strong>{ this.state.selectedDay } de { this.formatMonthString(this.state.selectedMonth) }</p>
-                                                        <p className="mb-1"><strong>Hora: </strong> Desde las <strong>{ this.formatAMPM(this.state.start_date) }</strong> Hasta las <strong>{ this.formatAMPM(this.state.end_date) }</strong></p>
-                                                        <p className="mb-1"><strong>Duración: </strong> { this.state.services[this.state.serviceIndexSelected].duration } min.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        }
 
                                     </div>
 
@@ -520,8 +666,7 @@ class NewDate extends Component {
                                         </div>
                                         { this.state.selectedHour != null &&
                                             <div className="col-6 text-right">
-                                                <button type="button" onClick={() => this.validateForm(2)}
-                                                        className="btn btn-outline-primary mx-auto">
+                                                <button type="button" onClick={() => this.validateForm(2)} className="btn btn-outline-primary mx-auto">
                                                     SIGUIENTE <i className="simple-icon-arrow-right-circle"/></button>
                                             </div>
                                         }
@@ -669,7 +814,7 @@ class NewDate extends Component {
                                                     <p className="text-muted text-small mb-2">Categoría</p>
                                                     <p className="">
                                                         <a href="#">
-                                                            <span className="badge badge-pill badge-outline-theme-2">{ this.state.services[this.state.serviceIndexSelected].category_name }</span>
+                                                            <span className="badge badge-pill badge-outline-theme-2">{ this.state.services[this.state.serviceIndexSelected].category.name }</span>
                                                         </a>
                                                     </p>
                                                 </div>
@@ -681,7 +826,7 @@ class NewDate extends Component {
                                             <a href="#" className="card"  data-toggle="tooltip" title="Hora y fecha">
                                                 <div className="card-body text-center">
                                                     <i className="iconsmind-Calendar-4 icon-lg"/>
-                                                    <p className="card-text font-weight-semibold mb-0 lead">{ this.state.selectedDay } de { this.formatMonthString(this.state.selectedMonth) }</p>
+                                                    <p className="card-text font-weight-semibold mb-0 lead">{ this.state.schedule.day }, { this.state.selectedDay } de { this.formatMonthString(this.state.selectedMonth) }</p>
                                                     <p className="text-muted text-small mb-2">Hora:</p>
                                                     <p className="mb-1">Desde las <strong>{ this.formatAMPM(this.state.start_date) }</strong> Hasta las <strong>{ this.formatAMPM(this.state.end_date) }</strong></p>
                                                 </div>
@@ -705,14 +850,28 @@ class NewDate extends Component {
                                         </div>
                                     </div>
 
+                                    <div className="row justify-content-center mt-3">
+                                        <div className="col-10 text-left card p-3">
+
+                                            <div className="input-group">
+                                                <div className="input-group-prepend">
+                                                    <span className="input-group-text">Notas: </span>
+                                                </div>
+                                                <textarea style={ { maxHeight: '400px' }} name="observations" className="form-control" id="observations"
+                                                          placeholder="Notas u observaciones de la cita..." onChange={ (e) => this.setState({ observations: e.target.value }) }>
+                                                    { this.state.observations }</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div className="row">
                                         <div className="col-6 text-left">
                                             <button type="button" onClick={ () => this.setState({ step: this.state.step - 1 }) } className="btn btn-outline-dark mx-auto">
                                                 <i className="simple-icon-arrow-left-circle"/> IR ATRAS</button>
                                         </div>
                                         <div className="col-6 text-right">
-                                            <button type="button" onClick={ () => this.validateForm(4) } className="btn btn-outline-primary mx-auto">
-                                                CONFIRMAR <i className="simple-icon-check"/></button>
+                                            <button type="button" onClick={ () => this.submitNewDate() } className="btn btn-primary mx-auto">
+                                                CONFIRMAR CITA <i className="simple-icon-check"/></button>
                                         </div>
                                     </div>
                                 </div>

@@ -1,18 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/resources/js/components/Settings.js" line="39" />
-    <bookmark url="file://$PROJECT_DIR$/database/migrations/2020_01_29_201935_create_dates_table.php" line="25" />
-    <bookmark url="file://$PROJECT_DIR$/resources/views/admin/calendario/create.blade.php" line="41" />
-    <bookmark url="file://$PROJECT_DIR$/resources/views/admin/employees/edit.blade.php" line="99" />
-    <bookmark url="file://$PROJECT_DIR$/public/js/app/employees.js" line="118" />
-    <bookmark url="file://$PROJECT_DIR$/public/js/app/employees.js" line="106" />
-    <bookmark url="file://$PROJECT_DIR$/resources/js/components/NewDate.js" line="358" />
-    <bookmark url="file://$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" line="37" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="c46a01a3-0fc4-41a8-b84f-9e266aa2b8d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/CalendarDates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/DetailsDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/DetailsDateGuest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ListDates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/NewDateGuest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/calendario/details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/calendario/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/date/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/date/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/date/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mails/new_date_guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Cuantica-Book.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cuantica-Book.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Date.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RestPeriodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RestPeriodController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_29_201935_create_dates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_29_201935_create_dates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.dark.blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.dark.blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.dark.green.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.dark.green.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.dark.orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.dark.orange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.dark.purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.dark.purple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.dark.red.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.dark.red.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.light.blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.light.blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.light.green.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.light.green.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.light.orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.light.orange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.light.purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.light.purple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dore.light.red.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dore.light.red.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app/services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dore.script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dore.script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/NewDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/NewDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/calendario/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/calendario/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/services/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/services/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/services/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/services/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,69 +78,94 @@
     <session id="-572921337">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="50" />
           <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.107" value="1" />
           <entry key="project.open.time.108" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.127" value="2" />
+          <entry key="project.open.time.162" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.26" value="2" />
+          <entry key="project.open.time.26" value="3" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.321" value="1" />
           <entry key="project.open.time.34" value="2" />
-          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.42" value="2" />
+          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.47" value="2" />
-          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.48" value="3" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.56" value="2" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.67" value="1" />
+          <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.77" value="1" />
-          <entry key="project.open.time.85" value="1" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.85" value="2" />
+          <entry key="project.open.time.87" value="1" />
+          <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.89" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="4" />
+          <entry key="css" value="12" />
           <entry key="dummy" value="7" />
           <entry key="env" value="32" />
-          <entry key="js" value="19548" />
-          <entry key="php" value="18031" />
-          <entry key="scss" value="54" />
+          <entry key="js" value="34760" />
+          <entry key="php" value="27934" />
+          <entry key="scss" value="195" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="32" />
-          <entry key="Blade" value="10691" />
-          <entry key="CSS" value="4" />
-          <entry key="JavaScript" value="19548" />
-          <entry key="PHP" value="7340" />
+          <entry key="Blade" value="12254" />
+          <entry key="CSS" value="12" />
+          <entry key="HTML" value="5" />
+          <entry key="JavaScript" value="34755" />
+          <entry key="PHP" value="15680" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="SCSS" value="54" />
+          <entry key="SCSS" value="195" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="11" />
-          <entry key="env" value="1" />
-          <entry key="js" value="50" />
-          <entry key="php" value="164" />
-          <entry key="scss" value="9" />
+          <entry key="css" value="28" />
+          <entry key="env" value="3" />
+          <entry key="js" value="100" />
+          <entry key="php" value="277" />
+          <entry key="scss" value="14" />
+          <entry key="ts" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="1" />
-          <entry key="Blade" value="72" />
-          <entry key="CSS" value="11" />
-          <entry key="JavaScript" value="50" />
-          <entry key="PHP" value="92" />
-          <entry key="SCSS" value="9" />
+          <entry key=".env file" value="3" />
+          <entry key="Blade" value="116" />
+          <entry key="CSS" value="28" />
+          <entry key="JavaScript" value="100" />
+          <entry key="PHP" value="161" />
+          <entry key="SCSS" value="14" />
+          <entry key="TypeScript" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -97,115 +173,133 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DateController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="21" column="63" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="63" />
+            <state relative-caret-position="966">
+              <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+                <element signature="e#316#397#0#PHP" />
+                <element signature="e#466#549#0#PHP" />
+                <element signature="e#492#906#0#PHP" />
+                <element signature="e#912#3151#0#PHP" />
+                <element signature="e#3251#5732#0#PHP" />
+                <element signature="e#5391#5627#0#PHP" />
+                <element signature="e#5914#5957#0#PHP" />
+                <element signature="e#6063#6456#0#PHP" />
+                <element signature="e#3681#3762#0#PHP" />
+                <element signature="e#3768#4318#0#PHP" />
+                <element signature="e#4324#4523#0#PHP" />
+                <element signature="e#4529#5668#0#PHP" />
+                <element signature="e#5674#6369#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/client/date/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-              <folding>
-                <element signature="e#39#52#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="230">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Settings.js">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/DetailsDateGuest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="586" column="103" selection-start-line="586" selection-start-column="103" selection-end-line="586" selection-end-column="103" />
+            <state relative-caret-position="645">
+              <caret line="133" column="84" lean-forward="true" selection-start-line="133" selection-start-column="84" selection-end-line="133" selection-end-column="84" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="n#!!block;n#formatTime#0;n#Settings#0" />
-                <element signature="n#!!block;n#handleChangeSchedule#0;n#Settings#0" />
-                <element signature="n#!!block;n#handleChangeRestPeriod#0;n#Settings#0" />
-                <element signature="n#!!block;n#handleChangeNewRestPeriod#0;n#Settings#0" />
-                <element signature="n#!!block;n#submitFormSchedule#0;n#Settings#0" />
-                <element signature="n#!!block;n#submitFormNewRestPeriod#0;n#Settings#0" />
-                <element signature="n#!!block;n#submitRestPeriod#0;n#Settings#0" />
-                <element signature="n#!!block;n#deleteRestPeriod#0;n#Settings#0" />
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatAMPM#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatTime#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatNumber#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatMonthString#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatStatus#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#submitchangeStatusDate#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#relativeTime#0;n#DetailsDate#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+        <entry file="file://$PROJECT_DIR$/public/js/app/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
-              <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/NewDate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9384">
-              <caret line="675" column="48" selection-start-line="675" selection-start-column="48" selection-end-line="675" selection-end-column="48" />
+            <state relative-caret-position="46">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="19" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="n#!!block;n#componentDidMount#0;n#NewDate#0" />
-                <element signature="n#!!block;n#getData#0;n#NewDate#0" />
-                <element signature="n#!!block;n#initDatepicker#0;n#NewDate#0" />
-                <element signature="n#!!block;n#formatAMPM#0;n#NewDate#0" />
-                <element signature="n#!!block;n#formatTime#0;n#NewDate#0" />
-                <element signature="n#!!block;n#formatNumber#0;n#NewDate#0" />
-                <element signature="n#!!block;n#formatMonthString#0;n#NewDate#0" />
-                <element signature="n#!!block;n#handleChangeService#0;n#NewDate#0" />
-                <element signature="n#!!block;n#handleSelectClient#0;n#NewDate#0" />
-                <element signature="n#!!block;n#handleQuitSelectedClient#0;n#NewDate#0" />
-                <element signature="n#!!block;n#submitFormClient#0;n#NewDate#0" />
-                <element signature="n#!!block;n#validateForm#0;n#NewDate#0" />
-                <element signature="n#!!block;n#onChangeDate#0;n#NewDate#0" />
-                <element signature="n#!!block;n#getScheduleDateSelected#0;n#NewDate#0" />
-                <element signature="n#!!block;n#hoursDiference#0;n#NewDate#0" />
-                <element signature="n#!!block;n#handleSelectHour#0;n#NewDate#0" />
+                <element signature="n#!!block;n#notify#0" />
+                <element signature="n#!!block;n#formatAMPM#0" />
+                <element signature="n#!!block;n#formatTime#0" />
+                <element signature="n#!!block;n#formatNumber#0" />
+                <element signature="n#!!block;n#formatMonthString#0" />
+                <element signature="n#!!block;n#formatDayString#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/DetailsDate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="32" column="39" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="235">
+              <caret line="257" column="30" selection-start-line="131" selection-start-column="23" selection-end-line="257" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#componentDidMount#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#getData#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatAMPM#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatTime#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatMonthString#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#formatStatus#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#submitchangeStatusDate#0;n#DetailsDate#0" />
+                <element signature="n#!!block;n#relativeTime#0;n#DetailsDate#0" />
+                <element signature="e#4556#13887#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="253">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/calendario/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="54" column="7" selection-start-line="51" selection-start-column="4" selection-end-line="54" selection-end-column="7" />
+            <state relative-caret-position="429">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Mail/NewDateGuest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="337">
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+              <folding>
+                <element signature="e#28#41#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/client/date/email.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="127" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="127" />
             </state>
           </provider>
         </entry>
@@ -221,36 +315,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input</find>
-      <find>@forea</find>
-      <find>class</find>
-      <find>class=</find>
-      <find>@for</find>
-      <find>this.handleChangeSchedule = this.handleChangeSchedule.bind(this);</find>
-      <find>&lt;select</find>
-      <find>clients</find>
-      <find>_client</find>
-      <find>user</find>
-      <find>$service</find>
-      <find>selectTime</find>
-      <find>&quot;img/</find>
-      <find>select</find>
-      <find>pass</find>
-      <find>messageSuccess1</find>
-      <find>messageSuccess</find>
-      <find>messageSuccess2</find>
-      <find>addres</find>
-      <find>exist</find>
-      <find>clients_list</find>
-      <find>client_list</find>
-      <find>client-list</find>
-      <find>eli</find>
-      <find>eleg</find>
-      <find>select2</find>
-      <find>note</find>
-      <find>notes</find>
-      <find>daysReset</find>
-      <find>resetFormSchedule</find>
+      <find>data</find>
+      <find>en</find>
+      <find>default</find>
+      <find>calendarDates</find>
+      <find>calendar</find>
+      <find>category_name</find>
+      <find>cropper</find>
+      <find>uploadedImageType</find>
+      <find>uploadedImageURL</find>
+      <find>cropper-preview</find>
+      <find>img-preview</find>
+      <find>&lt;img</find>
+      <find>duracion</find>
+      <find>hours</find>
+      <find>this.state.hours</find>
+      <find>th</find>
+      <find>split</find>
+      <find>CAMBIAR</find>
+      <find>$rest_periods</find>
+      <find>option</find>
+      <find>option[</find>
+      <find>&quot;Nunito&quot;</find>
+      <find>employee_id</find>
+      <find>session</find>
+      <find>ge</find>
+      <find>horario de</find>
+      <find>seleccionad</find>
+      <find>textarea</find>
+      <find>$distressCall</find>
+      <find>className</find>
     </findStrings>
     <replaceStrings>
       <replace>th</replace>
@@ -261,6 +355,9 @@
       <replace>employee</replace>
       <replace>$employee</replace>
       <replace>&quot;/img/</replace>
+      <replace>'Poppins'</replace>
+      <replace>$date</replace>
+      <replace>class</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -269,57 +366,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_01_28_221731_create_rest_periods_table.php" />
-        <option value="$PROJECT_DIR$/app/RestPeriod.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Example.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RestPeriodController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_01_29_201935_create_dates_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_01_21_141341_create_services_table.php" />
-        <option value="$PROJECT_DIR$/app/Schedule.php" />
+        <option value="$PROJECT_DIR$/public/js/app/scripts.js" />
+        <option value="$PROJECT_DIR$/public/css/app.css" />
+        <option value="$PROJECT_DIR$/resources/views/admin/calendario/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Date.php" />
+        <option value="$PROJECT_DIR$/app/Business.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_18_181036_create_businesses_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_02_094220_create_employees_table.php" />
-        <option value="$PROJECT_DIR$/public/js/app/categories.js" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/app/users.js" />
-        <option value="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_02_112700_create_employee_services_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/Employee.php" />
-        <option value="$PROJECT_DIR$/public/js/app/services.js" />
-        <option value="$PROJECT_DIR$/resources/views/admin/services/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/employees/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" />
-        <option value="$PROJECT_DIR$/public/js/app/employees.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/employees/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_02_04_094911_create_hours_table.php" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DateController.php" />
         <option value="$PROJECT_DIR$/public/js/dore.script.js" />
-        <option value="$PROJECT_DIR$/resources/views/admin/calendario/create.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_01_17_232424_create_clients_table.php" />
-        <option value="$PROJECT_DIR$/public/js/app/clients.js" />
-        <option value="$PROJECT_DIR$/resources/views/admin/clients/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/clients/create.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/PermissionMiddleware.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/employees/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/NewDate.js" />
-        <option value="$PROJECT_DIR$/vendor/spatie/laravel-permission/src/Middlewares/RoleMiddleware.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/services/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/services/edit.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/app/services.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RestPeriodController.php" />
+        <option value="$PROJECT_DIR$/app/Schedule.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/DetailsDate.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/calendario/details.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/Settings.js" />
+        <option value="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/dore.dark.blue.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.dark.green.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.dark.orange.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.dark.purple.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.dark.red.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.light.blue.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.light.green.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.light.orange.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.light.purple.css" />
+        <option value="$PROJECT_DIR$/public/css/dore.light.red.css" />
+        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/js/components/ListDates.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/CalendarDates.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" />
+        <option value="$PROJECT_DIR$/app/Service.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/date/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/NewDateGuest.js" />
+        <option value="$PROJECT_DIR$/resources/js/components/NewDate.js" />
+        <option value="$PROJECT_DIR$/resources/views/client/date/email.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/Mail/NewDateGuest.php" />
+        <option value="$PROJECT_DIR$/resources/views/mails/new_date_guest.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/views/client/date/show.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DateController.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/DetailsDateGuest.js" />
       </list>
     </option>
   </component>
@@ -430,6 +527,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -443,6 +541,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -459,14 +558,7 @@
               <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Mail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
@@ -508,12 +600,6 @@
               <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -526,13 +612,49 @@
             <path>
               <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="calendario" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="date" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="mails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cuantica-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cuantica-Book" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -541,14 +663,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2018.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Cuantica-Book\resources\js\components" />
+      <recent name="C:\laragon\www\Cuantica-Book\resources\views\client\date" />
+      <recent name="C:\laragon\www\Cuantica-Book\resources\views\layouts" />
+      <recent name="C:\laragon\www\Cuantica-Book\resources\views\admin\calendario" />
       <recent name="C:\laragon\www\Cuantica-Book\app\Http\Middleware" />
-      <recent name="C:\laragon\www\Cuantica-Book\resources\views\admin\employees" />
-      <recent name="C:\laragon\www\Cuantica-Book\resources\views\admin\services" />
-      <recent name="C:\laragon\www\Cuantica-Book\public\js\app" />
-      <recent name="C:\laragon\www\Cuantica-Book\resources\views\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -563,7 +686,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.watch">
+    <configuration name="watch-poll" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch-poll" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="watch" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -574,9 +707,14 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.watch" />
+      <item itemvalue="npm.watch-poll" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.watch" />
+        <item itemvalue="npm.watch-poll" />
       </list>
     </recent_temporary>
   </component>
@@ -614,24 +752,51 @@
       <workItem from="1582844374062" duration="1940000" />
       <workItem from="1583265661597" duration="4873000" />
       <workItem from="1583340489614" duration="4801000" />
-      <workItem from="1583451813293" duration="528000" />
+      <workItem from="1583451813293" duration="5622000" />
+      <workItem from="1583503241782" duration="10619000" />
+      <workItem from="1583524613079" duration="26013000" />
+      <workItem from="1583773958530" duration="6643000" />
+      <workItem from="1583958666854" duration="7421000" />
+      <workItem from="1584022649846" duration="9560000" />
+      <workItem from="1584042612850" duration="12026000" />
+      <workItem from="1584108121892" duration="12670000" />
+      <workItem from="1584129129154" duration="10346000" />
+      <workItem from="1584196461045" duration="11181000" />
+      <workItem from="1584366587385" duration="18437000" />
+      <workItem from="1584453528583" duration="11838000" />
+      <workItem from="1584474271617" duration="13353000" />
+      <workItem from="1584539849093" duration="1222000" />
+      <workItem from="1584549884891" duration="3268000" />
+      <workItem from="1584563183888" duration="8446000" />
+      <workItem from="1584628904747" duration="10188000" />
+      <workItem from="1584648691408" duration="8582000" />
+      <workItem from="1584715377466" duration="1177000" />
+      <workItem from="1584736925692" duration="7620000" />
+      <workItem from="1584800093731" duration="11413000" />
+      <workItem from="1585150702001" duration="18368000" />
+      <workItem from="1585237036904" duration="8414000" />
+      <workItem from="1585319877752" duration="11428000" />
+      <workItem from="1585410869062" duration="10975000" />
+      <workItem from="1585501811148" duration="9368000" />
+      <workItem from="1586186945075" duration="18208000" />
+      <workItem from="1586268858113" duration="14771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275618000" />
+    <option name="totallyTimeSpent" value="574267000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47180045" visible="true" weight="0.16257995" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4409836" visible="true" weight="0.16717096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.52819955" side_tool="true" weight="0.23933902" />
+      <window_info id="npm" order="2" sideWeight="0.5590164" side_tool="true" weight="0.16717096" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="1341" y="108" width="564" height="178" id="Run" order="2" type="FLOATING" visible="true" weight="0.2954796" />
+      <window_info anchor="bottom" x="885" y="119" width="447" height="178" id="Run" order="2" type="FLOATING" visible="true" weight="0.2954796" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -639,35 +804,15 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3251121" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36225596" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32131147" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.45409837" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49633253" visible="true" weight="0.25340393" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.5036675" side_tool="true" weight="0.25340393" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3672131" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -676,320 +821,255 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_02_094220_create_employees_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/services/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state relative-caret-position="667">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/categories.js">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BusinessController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="61" column="82" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="82" />
+        <state relative-caret-position="360">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="67" column="111" lean-forward="true" selection-start-line="67" selection-start-column="111" selection-end-line="67" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" selection-start-line="9" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_02_112700_create_employee_services_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+    <entry file="file://$PROJECT_DIR$/app/Date.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/employees/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="96" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
+        <state relative-caret-position="92">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/services.js">
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+        <state relative-caret-position="-7613">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/services/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dore.dark.blue.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="81" column="38" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="81" selection-end-column="38" />
+        <state relative-caret-position="138">
+          <caret line="353" column="22" lean-forward="true" selection-start-line="353" selection-start-column="22" selection-end-line="353" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ServiceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="73" column="5" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Employee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/employees.js">
+    <entry file="file://$PROJECT_DIR$/public/css/dore.dark.green.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
-          <folding>
-            <element signature="e#46#1876#0" />
-            <element signature="e#1922#3710#0" />
-          </folding>
+          <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
+    <entry file="file://$PROJECT_DIR$/public/css/dore.dark.orange.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="96" column="44" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+        <state relative-caret-position="184">
+          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/employees/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/css/dore.dark.purple.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="32" column="134" selection-start-line="32" selection-start-column="134" selection-end-line="32" selection-end-column="134" />
+        <state relative-caret-position="93909">
+          <caret line="4146" column="24" selection-start-line="4146" selection-start-column="24" selection-end-line="4146" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_04_094911_create_hours_table.php">
+    <entry file="file://$PROJECT_DIR$/public/css/dore.dark.red.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="146">
+          <caret line="44" column="29" lean-forward="true" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/font/iconsmind/style.css">
+    <entry file="file://$PROJECT_DIR$/public/css/dore.light.green.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="5962" column="1" selection-start-line="5962" selection-start-column="1" selection-end-line="5962" selection-end-column="1" />
+        <state relative-caret-position="146">
+          <caret line="44" column="29" lean-forward="true" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dore.light.orange.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="44" column="29" lean-forward="true" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dore.light.purple.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dore.light.red.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="44" column="29" lean-forward="true" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dore.light.blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="354" column="21" selection-start-line="354" selection-start-column="21" selection-end-line="354" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/scripts.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/calendario/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="-330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/calendario/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/nav.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/ListDates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state relative-caret-position="437">
+          <caret line="276" column="36" selection-start-line="276" selection-start-column="36" selection-end-line="276" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#ListDates#0" />
+            <element signature="n#!!block;n#componentDidMount#0;n#ListDates#0" />
+            <element signature="n#!!block;n#getData#0;n#ListDates#0" />
+            <element signature="n#!!block;n#formatAMPM#0;n#ListDates#0" />
+            <element signature="n#!!block;n#formatTime#0;n#ListDates#0" />
+            <element signature="n#!!block;n#formatNumber#0;n#ListDates#0" />
+            <element signature="n#!!block;n#formatMonthString#0;n#ListDates#0" />
+            <element signature="n#!!block;n#formatDayString#0;n#ListDates#0" />
+            <element signature="n#!!block;n#formatStatus#0;n#ListDates#0" />
+            <element signature="e#11015#12380#0" />
+            <element signature="e#12589#20885#0" />
+            <element signature="e#20980#29545#0" />
+            <element signature="e#29642#30785#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dore.script.js">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72059">
-          <caret line="3176" column="32" selection-start-line="3176" selection-start-column="15" selection-end-line="3176" selection-end-column="32" />
+        <state relative-caret-position="498">
+          <caret line="860" column="58" selection-start-line="860" selection-start-column="58" selection-end-line="860" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tui-calendar/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="238" column="21" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/calendario/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="48" selection-start-line="48" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Client.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_17_232424_create_clients_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/clients/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="129" column="50" selection-start-line="129" selection-start-column="50" selection-end-line="129" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/clients.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="80" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/clients/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="72" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/PermissionMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_26_122756_create_permission_tables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="191" column="18" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/services/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/calendario/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/employees/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2116">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/spatie/laravel-permission/src/Middlewares/RoleMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="63" />
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="1058">
+          <caret line="96" column="44" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="44" />
           <folding>
-            <element signature="e#39#52#0#PHP" expanded="true" />
+            <element signature="e#39#56#0#PHP" expanded="true" />
+            <element signature="e#326#1405#0#PHP" />
+            <element signature="e#592#1126#0#PHP" />
+            <element signature="e#1411#2263#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/CalendarDates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+        <state>
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#getData#0;n#CalendarDates#0" />
+            <element signature="n#!!block;n#formatAMPM#0;n#CalendarDates#0" />
+            <element signature="n#!!block;n#formatTime#0;n#CalendarDates#0" />
+            <element signature="n#!!block;n#formatNumber#0;n#CalendarDates#0" />
+            <element signature="n#!!block;n#formatMonthString#0;n#CalendarDates#0" />
+            <element signature="n#!!block;n#formatStatus#0;n#CalendarDates#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/guest.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/NewDate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9384">
-          <caret line="675" column="48" selection-start-line="675" selection-start-column="48" selection-end-line="675" selection-end-column="48" />
+        <state relative-caret-position="332">
+          <caret line="853" column="62" selection-start-line="853" selection-start-column="62" selection-end-line="853" selection-end-column="62" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#1606#1793#0" />
             <element signature="n#!!block;n#componentDidMount#0;n#NewDate#0" />
             <element signature="n#!!block;n#getData#0;n#NewDate#0" />
             <element signature="n#!!block;n#initDatepicker#0;n#NewDate#0" />
@@ -1001,57 +1081,219 @@
             <element signature="n#!!block;n#handleSelectClient#0;n#NewDate#0" />
             <element signature="n#!!block;n#handleQuitSelectedClient#0;n#NewDate#0" />
             <element signature="n#!!block;n#submitFormClient#0;n#NewDate#0" />
+            <element signature="n#!!block;n#submitNewDate#0;n#NewDate#0" />
             <element signature="n#!!block;n#validateForm#0;n#NewDate#0" />
             <element signature="n#!!block;n#onChangeDate#0;n#NewDate#0" />
             <element signature="n#!!block;n#getScheduleDateSelected#0;n#NewDate#0" />
             <element signature="n#!!block;n#hoursDiference#0;n#NewDate#0" />
-            <element signature="n#!!block;n#handleSelectHour#0;n#NewDate#0" />
+            <element signature="n#!!block;n#handleChangeFormNewClient#0;n#NewDate#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/NewDateGuest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="914" column="62" selection-start-line="914" selection-start-column="62" selection-end-line="914" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="n#!!block;n#getData#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#initDatepicker#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#formatAMPM#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#formatTime#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#formatNumber#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#formatMonthString#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#handleChangeService#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#handleSelectClient#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#handleQuitSelectedClient#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#submitFormClient#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#validateForm#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#onChangeDate#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#getScheduleDateSelected#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#hoursDiference#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#handleSelectHour#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#handleChangeFormNewClient#0;n#NewDateGuest#0" />
+            <element signature="n#!!block;n#handleChangeFormOldClient#0;n#NewDateGuest#0" />
+            <element signature="e#20208#22918#0" />
+            <element signature="e#23161#26361#0" />
+            <element signature="e#35679#36104#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/date/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/calendario/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="54" column="7" selection-start-line="51" selection-start-column="4" selection-end-line="54" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="586" column="103" selection-start-line="586" selection-start-column="103" selection-end-line="586" selection-end-column="103" />
+        <state relative-caret-position="391">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="n#!!block;n#formatTime#0;n#Settings#0" />
-            <element signature="n#!!block;n#handleChangeSchedule#0;n#Settings#0" />
-            <element signature="n#!!block;n#handleChangeRestPeriod#0;n#Settings#0" />
-            <element signature="n#!!block;n#handleChangeNewRestPeriod#0;n#Settings#0" />
-            <element signature="n#!!block;n#submitFormSchedule#0;n#Settings#0" />
-            <element signature="n#!!block;n#submitFormNewRestPeriod#0;n#Settings#0" />
-            <element signature="n#!!block;n#submitRestPeriod#0;n#Settings#0" />
-            <element signature="n#!!block;n#deleteRestPeriod#0;n#Settings#0" />
+            <element signature="e#134#281#0#PHP" />
+            <element signature="e#287#396#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="59" column="53" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/mails/new_date_guest.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/NewDateGuest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <folding>
+            <element signature="e#28#41#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/date/email.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="127" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#notify#0" />
+            <element signature="n#!!block;n#formatAMPM#0" />
+            <element signature="n#!!block;n#formatTime#0" />
+            <element signature="n#!!block;n#formatNumber#0" />
+            <element signature="n#!!block;n#formatMonthString#0" />
+            <element signature="n#!!block;n#formatDayString#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/DetailsDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="257" column="30" selection-start-line="131" selection-start-column="23" selection-end-line="257" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#componentDidMount#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#getData#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatAMPM#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatTime#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatMonthString#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatStatus#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#submitchangeStatusDate#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#relativeTime#0;n#DetailsDate#0" />
+            <element signature="e#4556#13887#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/calendario/details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/date/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+            <element signature="e#316#397#0#PHP" />
+            <element signature="e#466#549#0#PHP" />
+            <element signature="e#492#906#0#PHP" />
+            <element signature="e#912#3151#0#PHP" />
+            <element signature="e#3251#5732#0#PHP" />
+            <element signature="e#5391#5627#0#PHP" />
+            <element signature="e#5914#5957#0#PHP" />
+            <element signature="e#6063#6456#0#PHP" />
+            <element signature="e#3681#3762#0#PHP" />
+            <element signature="e#3768#4318#0#PHP" />
+            <element signature="e#4324#4523#0#PHP" />
+            <element signature="e#4529#5668#0#PHP" />
+            <element signature="e#5674#6369#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/DetailsDateGuest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="133" column="84" lean-forward="true" selection-start-line="133" selection-start-column="84" selection-end-line="133" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatAMPM#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatTime#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatNumber#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatMonthString#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#formatStatus#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#submitchangeStatusDate#0;n#DetailsDate#0" />
+            <element signature="n#!!block;n#relativeTime#0;n#DetailsDate#0" />
           </folding>
         </state>
       </provider>

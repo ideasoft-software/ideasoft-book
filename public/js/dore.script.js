@@ -25,7 +25,7 @@ Table of Contents
   03.18. Select 2
   03.19. Datepicker
   03.20. Dropzone
-  03.21. Cropperjs
+  03.21. Cropperjscalendar
   03.22. Range Slider
   03.23. Modal Passing Content
   03.24. Scrollbar
@@ -3231,11 +3231,9 @@ $.dore = function (element, options) {
             function each(arr, callback) {
                 var length = arr.length;
                 var i;
-
                 for (i = 0; i < length; i++) {
                     callback.call(arr, arr[i], i, arr);
                 }
-
                 return arr;
             }
 

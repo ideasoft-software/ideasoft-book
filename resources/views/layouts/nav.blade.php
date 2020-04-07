@@ -22,7 +22,7 @@
         </a>
 
         <div class="">
-            <a href="{{ URL::previous() }}" class="btn btn-light" data-toggle="tooltip" title="Ir atrás">
+            <a href="{{ URL::previous() }}" class="btn border-light shadow" data-toggle="tooltip" title="Ir atrás">
                 <i class="iconsmind-Arrow-Left"></i>
             </a>
         </div>
@@ -36,8 +36,15 @@
     </div>
 
     <a class="navbar-logo" href="{{ route('home') }}">
-        <span class="logo d-none d-xs-block"></span>
-        <span class="logo-mobile d-block d-xs-none"></span>
+        <span class="d-none d-xs-block">
+            <img src="{{ \Storage::url(session()->get('business_logo')) }}" width="30" alt="">
+        </span>
+        <span class="d-block d-xs-none">
+            <img src="{{ \Storage::url(session()->get('business_logo')) }}" width="50" alt="">
+            <!--<span class="h4 text-primary ">{{ session()->get('business_name') }}</span>-->
+        </span>
+        <!--<span class="logo d-none d-xs-block"></span>
+        <span class="logo-mobile d-block d-xs-none"></span>-->
     </a>
 
     <div class="navbar-right">

@@ -6,6 +6,11 @@
 
 require('./bootstrap');
 import 'bootstrap-timepicker';
+
+var moment = require('moment');
+//import * as moment from 'moment/locale/es';
+moment.locale('es');
+
 /**
  * Next, we will create a fresh React component instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -14,3 +19,9 @@ import 'bootstrap-timepicker';
 
 require('./components/Settings');
 require('./components/NewDate');
+require('./components/DetailsDate');
+require('./components/ListDates');
+require('./components/CalendarDates');
+
+require('./components/NewDateGuest');
+require('./components/DetailsDateGuest');
